@@ -1,5 +1,5 @@
 clearvars;clc;close all;
-addpath('dace');%引用文件夹
+addpath('dace');
 fun_name = 'Ellipsoid';
 d = 100;
 lower_bound = -5.12*ones(1,d);%下限
