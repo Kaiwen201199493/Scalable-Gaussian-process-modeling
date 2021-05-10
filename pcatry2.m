@@ -5,9 +5,9 @@ d = 100;
 lower_bound = -5.12*ones(1,d);
 upper_bound = 5.12*ones(1,d);
 
- time =zeros(1,10);
- RMSE = zeros(1,10);
- dim = 50;
+time =zeros(1,10);
+RMSE = zeros(1,10);
+dim = 50;
 for i = 1:10
 tic;
  num_sample = 1000; 
