@@ -9,7 +9,7 @@ upper_bound = 5.12*ones(1,d);
  RMSE = zeros(1,10);
  dim = 50;
 for i = 1:10
-tic%保存当前时间
+tic;
  num_sample = 1000; 
     sample_x = lhsdesign(num_sample,d).*(upper_bound - lower_bound)+lower_bound;
     sample_y = feval(fun_name,sample_x);
