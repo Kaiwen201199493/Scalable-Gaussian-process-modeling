@@ -14,12 +14,10 @@ tic%保存当前时间
     sample_x = lhsdesign(num_sample,d).*(upper_bound - lower_bound)+lower_bound;
     sample_y = feval(fun_name,sample_x);
     num_train = 100;
-    [coeff,score,latent,tsquare] = pca(sample_x);
-    new_sample_x=score(:,1:dim);
-if size(sample_x,1) > num_train
+if size(sample_x_select,1) > num_train
    sample_x_select = zeros(num_train,d);
-   sample_x_temp = sample_x;
-   a = size(sample_x,1);
+   sample_x_temp = sample_x_select;
+   a = size(sample_x_select,1);
    indx = randi(size(sample_x,1));
    sample_x_select(1,:) = sample_x_temp(indx,:);
    sample_x_temp(indx,:) = [];
